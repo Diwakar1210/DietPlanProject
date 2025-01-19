@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Lato", serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #f3f7f9 !important;
+  font-family: "Lato", serif;
+  overflow-y: auto !important;
+}
+
+:root {
+  --primary-clr: #fffcf5;
+  --white-clr: #ffffff;
+  --black-clr: #000000;
+  --label-clr: #2c2c2c;
+  --input-border: 1px solid #c4dafa;
+  --btn-bg: #16356c;
+  --secondary-btn-clr: #ebebeb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  color: var(--label-clr);
+}
+
+button {
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input {
+  width: 100%;
+  border: var(--input-border);
+  height: 35px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #292929;
+  padding: 0px 10px;
+  background-color: #f4f6fa;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  width: 100%;
+  font-size: 12px;
+  color: var(--label-clr);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Login starts */
+.Login_wrapper {
+  background-color: var(--background-clr);
+  padding: 50px;
+}
+
+.Login_page {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.Login_left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  border-radius: 12px;
+  background-color: #f5f9ff;
+}
+
+.Login_left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Login_right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-clr);
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+.Login_Fields {
+  width: 320px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.Login_heading h4 {
+  color: #0b2046;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.Login_fields {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.Login_submit_btn {
+  margin-top: 10px;
+}
+
+.Login_submit_btn button {
+  background-color: var(--black-clr);
+  color: var(--primary-clr);
+  width: 100%;
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-size: 14px;
+  height: 35px;
+}
+
+.Login_submit_btn button:focus{
+  outline: none;
+}
+
+.Login_submit_btn div {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.Login_submit_btn div a {
+  font-size: 12px;
+  color: #29292970;
+  transition: text-decoration 0.3s ease;
+}
+
+.Login_submit_btn div a:hover {
+  text-decoration: underline;
+}
+
+.eyeIconChange {
+  position: absolute;
+  height: 30px;
+  z-index: 999;
+  border: none !important;
+  right: 7px;
+  background-color: transparent !important;
+  top: 34px;
+  transition: all 0.3s ease;
+  padding: 0px 10px !important;
+  height: 25px !important;
+  margin: 0px !important;
+  box-shadow: none !important;
+  width: auto !important;
+}
+.eyeIconChange:focus{
+  outline: none;
+}
+/* Login ends */
+
+/* Hides browser eye */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* Header starts */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-clr);
+  padding: 5px 20px 0px 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.header .logo a img{
+  width: 70px;
+}
+.header nav ul{
+  display: flex;
+  align-items: center;
+}
+.header nav ul li{
+  list-style: none;
+  margin: 0 20px;
+}
+.header nav ul li.active{
+  border-bottom: 2px solid var(--black-clr);
+}
+.header nav ul li a{
+  color: var(--black-clr);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 17px 15px;
+  display: block;
+}
+/* Header ends */
+/* Main starts */
+main{
+  height: calc(100vh - 63px);
+  padding: 40px 20px 20px 20px;
+}
+.data-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+}
+.data-container .card{
+  padding: 10px;
+}
+.home-left{
+  padding: 100px 20px;
+}
+.home-left h1{
+  font-size: 1.25rem;
+font-size: clamp(1.25rem, 0.5rem + 3.75vw, 5rem);
+  color: var(--black-clr);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.home-left h1 span{
+  color: orange;
+}
+.home-left p{
+  font-size: 0.875rem;
+font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+  color: #29292970;
+  margin-bottom: 20px;
+}
+.home-right img{
+  width: 80%;
+  margin: auto;
+}
+.headings{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.userInputs{
+  margin-bottom: 10px;
+}
+.userInputs input{
+  height: 40px;
+  background-color: var(--primary-clr);
+}
+.dietForm{
+  background-color: var(--white-clr);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.userInputs button{
+  background-color: var(--black-clr);
+  color: var(--primary-clr);
+  width: 150px;
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-size: 14px;
+  height: 40px;
+}
+.healthResults div h5{
+  padding: 10px 0;
+}
+.healthResults div h5 span{
+  font-weight: bold;
+}
+.recommended_Plans{
+  padding: 20px 0;
+  margin-top: 20px;
+}
+/* Main ends */
