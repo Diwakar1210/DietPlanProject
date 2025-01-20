@@ -312,4 +312,26 @@ font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
   padding: 20px 0;
   margin-top: 20px;
 }
+.dataCard{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+.dataCard .card{
+  padding: 20px;
+}
+.dataCard .card ol li{
+  margin-left: 30px;
+}
 /* Main ends */
+/* Footer starts */
+.footer{
+  padding: 10px;
+  background-color: var(--white-clr);
+}
+.footer p{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* Footer ends */
